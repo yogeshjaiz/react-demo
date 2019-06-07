@@ -31,6 +31,10 @@ class Counter extends Component {
     }
   }
 
+  componentWillUnmount() {
+    console.log("componentWillUnmount call");
+  }
+
   // handleIncrement = () => {
   //   this.setState({ count: this.state.count + 1 });
   // };

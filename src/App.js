@@ -17,17 +17,14 @@ class App extends Component {
 
   constructor() {
     super();
-    console.log("I am in constructor....");
+    console.log("constructor call");
   }
 
   componentDidMount() {
-    console.log("I am in componentDidMount....");
+    console.log("componentDidMount call");
   }
   componentDidUpdate() {
-    console.log("I am in componentDidUpdate....");
-  }
-  componentWillUnmount() {
-    console.log("I am in componentWillUnmount....");
+    console.log("componentDidUpdate call");
   }
 
   handleDelete = counter => {
@@ -60,7 +57,7 @@ class App extends Component {
     this.setState({ counters: counters });
   };
   render() {
-    console.log("I am in render....");
+    console.log("render call");
     return (
       <div>
         <Navbar
